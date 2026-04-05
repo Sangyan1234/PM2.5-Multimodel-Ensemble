@@ -7,6 +7,6 @@ class ModelB(nn.Module):
         self.conv = nn.Conv2d(16, 64, 3, padding=1)
         self.out = nn.Conv2d(64, 16, 1)
 
-    def forward(self, x):
+    def forward(self, x, last_pm):
         x = x[:, -1]
         return self.out(self.conv(x))
