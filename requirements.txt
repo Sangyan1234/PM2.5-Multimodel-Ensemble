@@ -1,1 +1,6 @@
-
+numpy
+torch
+scipy
+tqdm
+statsmodels
+scikit-learn
